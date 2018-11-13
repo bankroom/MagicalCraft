@@ -10,7 +10,16 @@ client.on('ready', () => {
 
 
 
+client.on ("guildMemberAdd", member => {
+  
+   var role = member.guild.roles.find ("name", "member");
+   member.addRole (role);
+  
+})
 
+client.on ("guildMemberRemove", member => {
+   
+})
  
   
 
